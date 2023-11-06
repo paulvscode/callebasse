@@ -1,0 +1,351 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100Vw;
+}
+
+/* Menu Start */
+#startMenu {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../art/bgs/sand1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 1s ease-in-out;
+}
+
+#startMenu>h1 {
+    font-family: 'MedievalFont', sans-serif;
+    text-shadow: 2px 2px 3px #000;
+    background-size: cover;
+    padding: 10px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 3.5rem;
+}
+
+.btn-main-design {
+    box-shadow:inset 0px 1px 0px 0px #a6827e;
+	background:linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
+	background-color:#7d5d3b;
+	border-radius:3px;
+	border:1px solid #54381e;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #4d3534;
+}
+
+.btn-main-design:hover {
+    background:linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
+	background-color:#634b30;
+}
+
+#continue {
+    display: none;
+}
+
+/* Introduction */
+#introduction {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../art/bgs/sand2.png");
+}
+
+#intro-text {
+    width: 80%;
+    margin: 0 auto;
+    background-image: url("../art/story/parchment.jpeg");
+    padding: 1rem;
+    border-radius: 10px;
+    height: 500px;
+    overflow: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.picture-intro-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-intro-text {
+    height: 150px;
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+#intro-text>p {
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+#intro-text>h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 14rem;
+    border-bottom: 2px solid #5c4b00;
+}
+
+#intro-to-preambule {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro-to-preambule>button {
+    padding: 0.3rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* mission */
+#act-one {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../art/bgs/way.png");
+}
+
+#act1-intro {
+    width: 80%;
+    margin: 0 auto;
+    background-image: url("../art/story/parchment.jpeg");
+    padding: 1rem;
+    border-radius: 10px;
+    height: 70%;
+    overflow: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#act1-intro>p {
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+#act1-intro>h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 14rem;
+    border-bottom: 2px solid #5c4b00;
+}
+
+#act1-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#act1-action>button {
+    padding: 0.3rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* heroes selection */
+#heroes-selection {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../art/bgs/heroesselection.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heroes {
+    display: flex;
+    flex-direction: row;
+}
+
+.heroes>div {
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    margin: 1rem;
+    position: relative;
+    text-align: center;
+}
+
+.heroes>div>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.heroes>div>img:hover {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    opacity: .9;
+    transition: .1s ease-in-out;
+}
+
+.heroes>div>span {
+    position: absolute;
+    width: 100%;
+    font-size: 1.6rem;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 5px 10px;
+}
+
+/* act one action */
+#act-one-action {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../art/bgs/way.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transition: 1s ease-in-out;
+}
+
+#main-panel {
+    display: flex;
+    width: 25%;
+    background-color: white;
+    height: 550px;
+    margin: 1rem;
+    background-color: #e5d2cd;
+}
+
+#panel-dialog {
+    display: flex;
+    width: 75%;
+    background-color: #342520;
+    height: 550px;
+    margin: 1rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+}
+
+#panel-dialog-act-one-i {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#panel-dialog-act-one-i>p {
+    font-size: 1.4rem;
+    color: white;
+    margin: 2rem auto;
+}
+
+#current-hero {
+    height: 100px;
+    width: 100px;
+    background-color: antiquewhite;
+    align-self: start;
+    margin: 1rem;
+    border: 2px solid black;
+}
+
+#hero-data {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 9rem;
+    width: 100%;
+    border-bottom: 2px solid #795548;
+}
+
+#current-state {
+    display: flex;
+    flex-direction: column;
+}
+
+.hp,
+.power,
+.def {
+    display: flex;
+    flex-direction: row;
+}
+
+#current-def,
+#current-power,
+#current-hp {
+    font-size: 1.3rem;
+    margin-left: 0.5rem;
+}
+
+#current-bag>svg {
+    margin-left: 1.4rem;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+#current-bag>svg:hover {
+    opacity: 0.7;
+    fill: #bf9b30;
+}
+
+.caleb-pict {
+    background-image: url('../art/heroes/caleb.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#act-one-i-options {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#act-one-i-options > button {
+    padding: 0.3rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#act-one-i-options > button:hover {
+    background-color: black;
+    color: #EFEFEF;
+    transition: .1s ease-in-out;
+}

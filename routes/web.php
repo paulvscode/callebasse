@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\IntroductionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +15,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('game_start');
 });
+
+Route::get('/introduction', [IntroductionController::class, 'index'])->name('introduction.start');
+Route::get('/introduction-second', [IntroductionController::class, 'second'])->name('introduction.second');
+Route::get('/introduction-third', [IntroductionController::class, 'heroesSelection'])->name('heroes-selection');
